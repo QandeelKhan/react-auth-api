@@ -1,0 +1,4 @@
+the project backend is in django-auth-api
+in typescript
+prevent default: SyntheticEvent
+change event of an input field: React.<HtmlInputElement>
