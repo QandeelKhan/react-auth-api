@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ChangePassword from "./ChangePassword";
 import { getToken, removeToken } from "../../services/localStorageService";
 import { useDispatch } from "react-redux";
-import { unSetUserToken } from "../../features/authSlice";
+// import { unSetUserToken } from "../../features/authSlice";
 import { useGetLoggedUserQuery } from "../../services/userAuthApi";
 import { setUserInfo, unSetUserInfo } from "../../features/userSlice";
 
@@ -61,8 +61,7 @@ const Dashboard = () => {
 
     // on logout, unset data in store,unset token in store.remove token from browser
     const handleLogout = () => {
-        dispatch(unSetUserInfo({ name: "", email: "" }));
-        dispatch(unSetUserToken({ access_token: null }));
+        dispatch(unSetUserInfo());
         removeToken();
         navigate("/login");
     };

@@ -19,9 +19,13 @@ export const userSlice = createSlice({
             state.email = action.payload.email;
             state.name = action.payload.name;
         },
-        unSetUserInfo: (state, action) => {
-            state.email = action.payload.email;
-            state.name = action.payload.name;
+        // unSetUserInfo: (state, action) => {
+        //     state.email = action.payload.email;
+        //     state.name = action.payload.name;
+        // },
+        unSetUserInfo: (state) => {
+            state.email = "";
+            state.name = "";
         },
     },
 });

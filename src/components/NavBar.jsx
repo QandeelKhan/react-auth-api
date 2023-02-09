@@ -14,7 +14,7 @@ const NavBar = () => {
                             component="div"
                             sx={{ flexGrow: 1 }}
                         >
-                            Project Name
+                            Full-Stack Application Demo For Upwork.
                         </Typography>
                         <Button
                             component={NavLink}
